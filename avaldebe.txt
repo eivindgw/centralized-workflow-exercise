@@ -2,9 +2,12 @@
 My favourite git alias
 
 ```bash
-# pretty log one-liner
-git config --global alias.history "log --pretty=tformat:"%h %ad: %s" --date=short"
+# history: pretty log one-liner
+git config --global alias.history 'log --pretty=tformat:"%h %ad: %s" --date=short'
 
-# pretty log one-liner for HEAD/last commit
-git config --global alias.last    "!git --no-pager history HEAD -1"
+# last: history for last commit/HEAD
+git config --global alias.last    '!git --no-pager history HEAD -1'
+
+# who: like history but show commit author
+git config --global alias.who     'log --pretty=tformat:"%h %ad: %an" --date=short'
 ```
