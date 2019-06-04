@@ -1,0 +1,10 @@
+
+My favourite git alias
+
+```bash
+# pretty log one-liner
+git config --global alias.history "log --pretty=tformat:"%h %ad: %s" --date=short"
+
+# pretty log one-liner for HEAD/last commit
+git config --global alias.last    "!git --no-pager history HEAD -1"
+```
